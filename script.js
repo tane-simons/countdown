@@ -66,7 +66,7 @@ function timerDone() {
 document.querySelectorAll(".color-element").forEach(element => {
     element.addEventListener('click', function() {
         this.style.zIndex = '-1';
-        this.style.scale = '10000%';
+        this.style.scale = '20000%';
         this.style.position = 'absolute';
         document.body.style.overflow = 'hidden';
     })
@@ -183,7 +183,7 @@ if (enterAppearance) {
     enterAppearance.addEventListener('click', function() {
         const userInput = inputElement.value.toUpperCase();
 
-        if (userInput==="DEADLINE" || "DEAD LINE") {
+        if (userInput==="DEADLINE" || userInput==="DEAD LINE") {
             completeChallenge();
         }
         else {
@@ -214,6 +214,7 @@ document.addEventListener('mousemove', (e) => {
     maskCircles.forEach(circle => {
         circle.setAttribute('cx', mouseX);
         circle.setAttribute('cy', mouseY);
+        circle.setAttribute('r', window.innerWidth * 0.03);
     });
 });
 

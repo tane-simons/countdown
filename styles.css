@@ -122,12 +122,22 @@ input:focus {
 
 #input-and-enter input {
     font-size: 2.5vw;
-    margin: 1rem;
+    margin: 1vw;
     height: 50%;
     border-radius: 20rem;
     border: 1px black solid;
-    padding: 1vw 2vw;
+    padding: 1vw 0 1vw 4vw;
     font-weight: 400;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
 }
 
 button:hover {
