@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html id="page8">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>countdown</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <p>countdown</p>
+        <p class="timer"></p>
+    </header>
+    <body>
+        <button id="enter-reveal">&rarr;</button>
+        <svg class="canvas" width="100%" height="100%" preserveAspectRatio="none">
+            <defs>
+                <mask id="circleMask">
+                    <rect width="100%" height="100%" fill="white"/>
+                    <circle class="mask-circle" cx="0" cy="0" r="40" fill="black"/>
+                </mask>
+            </defs>
+            <rect width="100%" height="100%" fill="gold" mask="url(#circleMask)"/>
+            <circle class="mask-circle" cx="0" cy="0" r="40" fill="none" stroke="black" stroke-width="2"/>
+        </svg>
+        <script src="script.js" defer></script>
+    </body>
+</html>
